@@ -1,0 +1,10 @@
+I"¢(function() {
+  this.Cable = {
+    PING_IDENTIFIER: "_ping",
+    createConsumer: function(url) {
+      return new Cable.Consumer(url);
+    }
+  };
+
+}).call(this);
+:ET

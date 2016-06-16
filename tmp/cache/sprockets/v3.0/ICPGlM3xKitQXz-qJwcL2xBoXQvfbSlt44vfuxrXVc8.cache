@@ -1,0 +1,137 @@
+I"Å(function() {
+  var slice = [].slice,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Cable.Connection = (function() {
+    function Connection(consumer) {
+      this.consumer = consumer;
+      this.open();
+    }
+
+    Connection.prototype.send = function(data) {
+      if (this.isOpen()) {
+        this.webSocket.send(JSON.stringify(data));
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    Connection.prototype.open = function() {
+      if (this.isState("open", "connecting")) {
+        return;
+      }
+      this.webSocket = new WebSocket(this.consumer.url);
+      return this.installEventHandlers();
+    };
+
+    Connection.prototype.close = function() {
+      var ref;
+      if (this.isState("closed", "closing")) {
+        return;
+      }
+      return (ref = this.webSocket) != null ? ref.close() : void 0;
+    };
+
+    Connection.prototype.reopen = function() {
+      if (this.isOpen()) {
+        return this.closeSilently((function(_this) {
+          return function() {
+            return _this.open();
+          };
+        })(this));
+      } else {
+        return this.open();
+      }
+    };
+
+    Connection.prototype.isOpen = function() {
+      return this.isState("open");
+    };
+
+    Connection.prototype.isState = function() {
+      var ref, states;
+      states = 1 <= arguments.length ? slice.call(arguments, 0) : [];
+      return ref = this.getState(), indexOf.call(states, ref) >= 0;
+    };
+
+    Connection.prototype.getState = function() {
+      var ref, state, value;
+      for (state in WebSocket) {
+        value = WebSocket[state];
+        if (value === ((ref = this.webSocket) != null ? ref.readyState : void 0)) {
+          return state.toLowerCase();
+        }
+      }
+      return null;
+    };
+
+    Connection.prototype.closeSilently = function(callback) {
+      if (callback == null) {
+        callback = function() {};
+      }
+      this.uninstallEventHandlers();
+      this.installEventHandler("close", callback);
+      this.installEventHandler("error", callback);
+      try {
+        return this.webSocket.close();
+      } finally {
+        this.uninstallEventHandlers();
+      }
+    };
+
+    Connection.prototype.installEventHandlers = function() {
+      var eventName, results;
+      results = [];
+      for (eventName in this.events) {
+        results.push(this.installEventHandler(eventName));
+      }
+      return results;
+    };
+
+    Connection.prototype.installEventHandler = function(eventName, handler) {
+      if (handler == null) {
+        handler = this.events[eventName].bind(this);
+      }
+      return this.webSocket.addEventListener(eventName, handler);
+    };
+
+    Connection.prototype.uninstallEventHandlers = function() {
+      var eventName, results;
+      results = [];
+      for (eventName in this.events) {
+        results.push(this.webSocket.removeEventListener(eventName));
+      }
+      return results;
+    };
+
+    Connection.prototype.events = {
+      message: function(event) {
+        var identifier, message, ref;
+        ref = JSON.parse(event.data), identifier = ref.identifier, message = ref.message;
+        return this.consumer.subscriptions.notify(identifier, "received", message);
+      },
+      open: function() {
+        return this.consumer.subscriptions.reload();
+      },
+      close: function() {
+        return this.consumer.subscriptions.notifyAll("disconnected");
+      },
+      error: function() {
+        this.consumer.subscriptions.notifyAll("disconnected");
+        return this.closeSilently();
+      }
+    };
+
+    Connection.prototype.toJSON = function() {
+      return {
+        state: this.getState()
+      };
+    };
+
+    return Connection;
+
+  })();
+
+}).call(this);
+:ET

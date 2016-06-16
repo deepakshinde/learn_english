@@ -1,0 +1,784 @@
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from included at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:14)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:15)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:39:44 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activerecord/lib/active_record/migration.rb:380:in `check_pending!'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activerecord/lib/active_record/migration.rb:361:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/callbacks.rb:90:in `__run_callbacks__'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/callbacks.rb:814:in `_run_call_callbacks'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/callbacks.rb:83:in `run_callbacks'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:47:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/web-console-baafb8e6d074/lib/web_console/middleware.rb:31:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/railties/lib/rails/rack/logger.rb:24:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/static.rb:122:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/railties/lib/rails/engine.rb:525:in `call'
+  /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/railties/lib/rails/application.rb:165:in `call'
+  puma (2.11.3) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.3) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.3) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.3) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/deepak/.rvm/gems/ruby-2.3.0/bundler/gems/rails-094571b46dbc/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.4ms)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from included at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb:7)
+  [1m (8.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m (7.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMessages (20151018151728)
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m (0.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018151728"]]
+  [1m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from included at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:14)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:15)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:40:53 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2548ms (Views: 2536.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.self-1a222fc67f2c2a84f0219c75cf8646f55e056822cd32efb1bcd2195e3a656e36.css?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-47269e2f52cc5c141d7800f137027f65caec0568623cbde303edcba8d143e0c8.css?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cable/connection.self-f3dc8bb84585a8cce35a6af50ee4b18a11a86ae9773b1630e0dc973df2500a79.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Started GET "/assets/cable/connection_monitor.self-0b501a8f395955062bec67cbd4beefe6dc8c42a0b2e4b0250b24eb0d95b0124e.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/cable.self-02151c4bc9d0bc5fa36bcee3d056636ee19f6e350a4f903477472f7ce95cbfcc.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+
+Started GET "/assets/cable/subscription.self-92f981e131de63b8e79495e68da94b035e24b5e33bec0c6f86f808cd8eb72806.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Started GET "/assets/cable/consumer.self-1805ed78559b1ea88141fdc954fdda1d08b98b6a1de15cd9a3209fdb568ea3cd.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/cable/subscriptions.self-6ba706793406ee2c2a65c2405aff991ade0713a0be11e2c87b2b1ec3902d4b0a.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/channels/messages.self-b4d0e7ae920fe2a2c241f8e629d864f55086acabc43f69774e85de333c60001f.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/channels/index.self-5dff9ac9f712da645ab8fd261ba768a7f70d5aead90f751d3bba524383e9c86c.js?body=1" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:40:56 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/sessions" for 192.168.11.249 at 2016-06-16 17:41:09 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64XMb4cR9FBrYI62FhNcxodygPBrvM6Vv56L9l2XlE6In76e0bEeBknJVqT6ytPXgi77p6KjmV1tNy8c6c/Q4g==", "session"=>{"username"=>"Deepak"}, "commit"=>"Start chatting"}
+Redirected to http://dpktest:3000/messages
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:41:09 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered collection (0.0ms)
+  Rendered messages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 31.7ms | ActiveRecord: 1.1ms)
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:41:09 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:41:10 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:41:10 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:41:14 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Hello"}}
+  [1m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hello"], ["username", "Deepak"], ["created_at", 2016-06-16 12:11:14 UTC], ["updated_at", 2016-06-16 12:11:14 UTC]]
+  [1m (6.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: b376639b-a346-4752-a680-39ae228ae4d2) to Inline(default) with arguments: gid://chat/Message/1
+[ActiveJob]   [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [MessageRelayJob] [b376639b-a346-4752-a680-39ae228ae4d2] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/1
+[ActiveJob] [MessageRelayJob] [b376639b-a346-4752-a680-39ae228ae4d2]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageRelayJob] [b376639b-a346-4752-a680-39ae228ae4d2] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: Hello</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: Hello</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [b376639b-a346-4752-a680-39ae228ae4d2] Performed MessageRelayJob from Inline(default) in 10.5ms
+Completed 200 OK in 53ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.6ms)
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/assets/main.self-1a222fc67f2c2a84f0219c75cf8646f55e056822cd32efb1bcd2195e3a656e36.css?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application.self-47269e2f52cc5c141d7800f137027f65caec0568623cbde303edcba8d143e0c8.css?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+
+
+
+Started GET "/assets/cable/connection.self-f3dc8bb84585a8cce35a6af50ee4b18a11a86ae9773b1630e0dc973df2500a79.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Started GET "/assets/cable/connection_monitor.self-0b501a8f395955062bec67cbd4beefe6dc8c42a0b2e4b0250b24eb0d95b0124e.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Started GET "/assets/cable/subscriptions.self-6ba706793406ee2c2a65c2405aff991ade0713a0be11e2c87b2b1ec3902d4b0a.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/cable.self-02151c4bc9d0bc5fa36bcee3d056636ee19f6e350a4f903477472f7ce95cbfcc.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+Started GET "/assets/cable/subscription.self-92f981e131de63b8e79495e68da94b035e24b5e33bec0c6f86f808cd8eb72806.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cable/consumer.self-1805ed78559b1ea88141fdc954fdda1d08b98b6a1de15cd9a3209fdb568ea3cd.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/channels/messages.self-b4d0e7ae920fe2a2c241f8e629d864f55086acabc43f69774e85de333c60001f.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Started GET "/assets/channels/index.self-5dff9ac9f712da645ab8fd261ba768a7f70d5aead90f751d3bba524383e9c86c.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:41:32 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:41:41 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:41:54 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"he"}}
+  [1m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "he"], ["username", "Deepak"], ["created_at", 2016-06-16 12:11:54 UTC], ["updated_at", 2016-06-16 12:11:54 UTC]]
+  [1m (35.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: ed2747e2-45dd-4b3b-a9c0-d9357384bc55) to Inline(default) with arguments: gid://chat/Message/2
+[ActiveJob]   [1mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 2]]
+[ActiveJob] [MessageRelayJob] [ed2747e2-45dd-4b3b-a9c0-d9357384bc55] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/2
+[ActiveJob] [MessageRelayJob] [ed2747e2-45dd-4b3b-a9c0-d9357384bc55]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageRelayJob] [ed2747e2-45dd-4b3b-a9c0-d9357384bc55] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: he</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: he</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [ed2747e2-45dd-4b3b-a9c0-d9357384bc55] Performed MessageRelayJob from Inline(default) in 6.31ms
+Completed 200 OK in 61ms (ActiveRecord: 36.4ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.1ms)
+  Rendered messages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-1a222fc67f2c2a84f0219c75cf8646f55e056822cd32efb1bcd2195e3a656e36.css?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+
+
+
+
+Started GET "/assets/application.self-47269e2f52cc5c141d7800f137027f65caec0568623cbde303edcba8d143e0c8.css?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+
+Started GET "/assets/cable.self-02151c4bc9d0bc5fa36bcee3d056636ee19f6e350a4f903477472f7ce95cbfcc.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable/connection.self-f3dc8bb84585a8cce35a6af50ee4b18a11a86ae9773b1630e0dc973df2500a79.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Started GET "/assets/cable/connection_monitor.self-0b501a8f395955062bec67cbd4beefe6dc8c42a0b2e4b0250b24eb0d95b0124e.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cable/subscriptions.self-6ba706793406ee2c2a65c2405aff991ade0713a0be11e2c87b2b1ec3902d4b0a.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cable/subscription.self-92f981e131de63b8e79495e68da94b035e24b5e33bec0c6f86f808cd8eb72806.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/channels/index.self-5dff9ac9f712da645ab8fd261ba768a7f70d5aead90f751d3bba524383e9c86c.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/channels/messages.self-b4d0e7ae920fe2a2c241f8e629d864f55086acabc43f69774e85de333c60001f.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Started GET "/assets/cable/consumer.self-1805ed78559b1ea88141fdc954fdda1d08b98b6a1de15cd9a3209fdb568ea3cd.js?body=1" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:42:52 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:43:01 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"test"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m (0.1ms)[0m  [1m[36mrollback transaction[0m
+Completed 200 OK in 12ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:43:09 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"sds"}}
+  [1m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "sds"], ["username", "Deepak"], ["created_at", 2016-06-16 12:13:09 UTC], ["updated_at", 2016-06-16 12:13:09 UTC]]
+  [1m (6.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: c8d925d1-ebc1-4945-82c9-dbc9f2f871c1) to Inline(default) with arguments: gid://chat/Message/3
+[ActiveJob]   [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 3]]
+[ActiveJob] [MessageRelayJob] [c8d925d1-ebc1-4945-82c9-dbc9f2f871c1] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/3
+[ActiveJob] [MessageRelayJob] [c8d925d1-ebc1-4945-82c9-dbc9f2f871c1]   Rendered messages/_message.html.erb (0.1ms)
+[ActiveJob] [MessageRelayJob] [c8d925d1-ebc1-4945-82c9-dbc9f2f871c1] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: sds</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: sds</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: sds</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [c8d925d1-ebc1-4945-82c9-dbc9f2f871c1] Performed MessageRelayJob from Inline(default) in 6.3ms
+Completed 200 OK in 25ms (ActiveRecord: 7.7ms)
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:43:15 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"asasa"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m (0.1ms)[0m  [1m[36mrollback transaction[0m
+Completed 200 OK in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.2ms)
+  Rendered messages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/assets/application.self-47269e2f52cc5c141d7800f137027f65caec0568623cbde303edcba8d143e0c8.css?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+
+
+
+
+Started GET "/assets/cable/connection.self-f3dc8bb84585a8cce35a6af50ee4b18a11a86ae9773b1630e0dc973df2500a79.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+
+
+
+
+Started GET "/assets/cable/connection_monitor.self-0b501a8f395955062bec67cbd4beefe6dc8c42a0b2e4b0250b24eb0d95b0124e.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+
+Started GET "/assets/main.self-1a222fc67f2c2a84f0219c75cf8646f55e056822cd32efb1bcd2195e3a656e36.css?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable/subscriptions.self-6ba706793406ee2c2a65c2405aff991ade0713a0be11e2c87b2b1ec3902d4b0a.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+
+
+Started GET "/assets/cable/consumer.self-1805ed78559b1ea88141fdc954fdda1d08b98b6a1de15cd9a3209fdb568ea3cd.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable.self-02151c4bc9d0bc5fa36bcee3d056636ee19f6e350a4f903477472f7ce95cbfcc.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+
+Started GET "/assets/cable/subscription.self-92f981e131de63b8e79495e68da94b035e24b5e33bec0c6f86f808cd8eb72806.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Started GET "/assets/channels/messages.self-b4d0e7ae920fe2a2c241f8e629d864f55086acabc43f69774e85de333c60001f.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/channels/index.self-5dff9ac9f712da645ab8fd261ba768a7f70d5aead90f751d3bba524383e9c86c.js?body=1" for 192.168.11.249 at 2016-06-16 17:44:06 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:44:07 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:44:07 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:44:12 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"kk"}}
+  [1m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "kk"], ["username", "Deepak"], ["created_at", 2016-06-16 12:14:12 UTC], ["updated_at", 2016-06-16 12:14:12 UTC]]
+  [1m (5.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: 8fcb45fd-a0fd-4c14-8ef8-0d279ab4e41c) to Inline(default) with arguments: gid://chat/Message/4
+[ActiveJob]   [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 4]]
+[ActiveJob] [MessageRelayJob] [8fcb45fd-a0fd-4c14-8ef8-0d279ab4e41c] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/4
+[ActiveJob] [MessageRelayJob] [8fcb45fd-a0fd-4c14-8ef8-0d279ab4e41c]   Rendered messages/_message.html.erb (0.1ms)
+[ActiveJob] [MessageRelayJob] [8fcb45fd-a0fd-4c14-8ef8-0d279ab4e41c] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: kk</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: kk</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [8fcb45fd-a0fd-4c14-8ef8-0d279ab4e41c] Performed MessageRelayJob from Inline(default) in 7.47ms
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: kk</p>\n"} (via streamed from messages)
+Completed 200 OK in 24ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:44:19 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.2ms)
+  Rendered messages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:44:20 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:44:20 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:44:22 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"asa"}}
+  [1m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "asa"], ["username", "Deepak"], ["created_at", 2016-06-16 12:14:22 UTC], ["updated_at", 2016-06-16 12:14:22 UTC]]
+  [1m (11.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: d70d7b6d-c3ab-4bd9-b0aa-d60edd62bc13) to Inline(default) with arguments: gid://chat/Message/5
+[ActiveJob]   [1mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 5]]
+[ActiveJob] [MessageRelayJob] [d70d7b6d-c3ab-4bd9-b0aa-d60edd62bc13] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/5
+[ActiveJob] [MessageRelayJob] [d70d7b6d-c3ab-4bd9-b0aa-d60edd62bc13]   Rendered messages/_message.html.erb (0.2ms)
+[ActiveJob] [MessageRelayJob] [d70d7b6d-c3ab-4bd9-b0aa-d60edd62bc13] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: asa</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: asa</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: asa</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: asa</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [d70d7b6d-c3ab-4bd9-b0aa-d60edd62bc13] Performed MessageRelayJob from Inline(default) in 9.58ms
+Completed 200 OK in 46ms (ActiveRecord: 12.5ms)
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:44:28 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"sas"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "sas"], ["username", "Deepak"], ["created_at", 2016-06-16 12:14:28 UTC], ["updated_at", 2016-06-16 12:14:28 UTC]]
+  [1m (5.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: 8a9e951f-5872-4db2-982f-7aaee38289fa) to Inline(default) with arguments: gid://chat/Message/6
+[ActiveJob]   [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 6]]
+[ActiveJob] [MessageRelayJob] [8a9e951f-5872-4db2-982f-7aaee38289fa] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/6
+[ActiveJob] [MessageRelayJob] [8a9e951f-5872-4db2-982f-7aaee38289fa]   Rendered messages/_message.html.erb (0.1ms)
+[ActiveJob] [MessageRelayJob] [8a9e951f-5872-4db2-982f-7aaee38289fa] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: sas</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: sas</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [8a9e951f-5872-4db2-982f-7aaee38289fa] Performed MessageRelayJob from Inline(default) in 10.06ms
+Completed 200 OK in 37ms (ActiveRecord: 6.4ms)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: sas</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: sas</p>\n"} (via streamed from messages)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from included at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb:7)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from included at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:14)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from block (3 levels) in <class:Engine> at /home/deepak/.rvm/gems/ruby-2.3.0/gems/turbolinks-2.5.3/lib/turbolinks.rb:15)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:46:01 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:46:01 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:46:01 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:46:01 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:46:09 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:46:09 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started GET "/messages" for 192.168.15.56 at 2016-06-16 17:46:24 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.6ms)
+  Rendered messages/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 333ms (Views: 311.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/main.self-1a222fc67f2c2a84f0219c75cf8646f55e056822cd32efb1bcd2195e3a656e36.css?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+
+
+
+
+Started GET "/assets/application.self-47269e2f52cc5c141d7800f137027f65caec0568623cbde303edcba8d143e0c8.css?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+
+
+Started GET "/assets/cable/connection.self-f3dc8bb84585a8cce35a6af50ee4b18a11a86ae9773b1630e0dc973df2500a79.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable/connection_monitor.self-0b501a8f395955062bec67cbd4beefe6dc8c42a0b2e4b0250b24eb0d95b0124e.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+
+
+
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable.self-02151c4bc9d0bc5fa36bcee3d056636ee19f6e350a4f903477472f7ce95cbfcc.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+
+Started GET "/assets/cable/subscription.self-92f981e131de63b8e79495e68da94b035e24b5e33bec0c6f86f808cd8eb72806.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/cable/subscriptions.self-6ba706793406ee2c2a65c2405aff991ade0713a0be11e2c87b2b1ec3902d4b0a.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cable/consumer.self-1805ed78559b1ea88141fdc954fdda1d08b98b6a1de15cd9a3209fdb568ea3cd.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+
+
+Started GET "/assets/channels/messages.self-b4d0e7ae920fe2a2c241f8e629d864f55086acabc43f69774e85de333c60001f.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Started GET "/assets/channels/index.self-5dff9ac9f712da645ab8fd261ba768a7f70d5aead90f751d3bba524383e9c86c.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.15.56 at 2016-06-16 17:46:25 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.15.56 at 2016-06-16 17:46:35 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Hi"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m (0.1ms)[0m  [1m[36mrollback transaction[0m
+Completed 200 OK in 16ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/messages" for 192.168.15.56 at 2016-06-16 17:46:46 +0530
+Cannot render console from 192.168.15.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Hi"}}
+  [1m (1.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m (0.1ms)[0m  [1m[36mrollback transaction[0m
+Completed 200 OK in 8ms (ActiveRecord: 1.6ms)
+Finished "/" [Websocket] for 192.168.15.56 at 2016-06-16 17:46:53 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:47:59 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:47:59 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:47:59 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:47:59 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:08 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:48:08 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:48:09 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:09 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:12 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started POST "/sessions" for 192.168.11.249 at 2016-06-16 17:48:12 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0JLhznFVXA2eMPN7T5rHSFn0sVsvVyumlph8Ib1tpz5iQMk8ZkNmp09A4MNqcflCBR8j3xSorbL7cRXWs/108Q==", "session"=>{"username"=>"test"}, "commit"=>"Start chatting"}
+Redirected to http://dpktest:3000/messages
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:48:12 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.3ms)
+  Rendered messages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:48:13 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:13 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:48:15 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Tes"}}
+  [1m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Tes"], ["username", "test"], ["created_at", 2016-06-16 12:18:15 UTC], ["updated_at", 2016-06-16 12:18:15 UTC]]
+  [1m (5.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: 9b4ec1ed-7108-46b0-84e7-a79b5a0f0195) to Inline(default) with arguments: gid://chat/Message/7
+[ActiveJob]   [1mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 7]]
+[ActiveJob] [MessageRelayJob] [9b4ec1ed-7108-46b0-84e7-a79b5a0f0195] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/7
+[ActiveJob] [MessageRelayJob] [9b4ec1ed-7108-46b0-84e7-a79b5a0f0195]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageRelayJob] [9b4ec1ed-7108-46b0-84e7-a79b5a0f0195] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>test</b>: Tes</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: Tes</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: Tes</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [9b4ec1ed-7108-46b0-84e7-a79b5a0f0195] Performed MessageRelayJob from Inline(default) in 9.55ms
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: Tes</p>\n"} (via streamed from messages)
+Completed 200 OK in 50ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/messages" for 192.168.11.249 at 2016-06-16 17:48:20 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  [1mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" ORDER BY id desc LIMIT 20[0m
+  Rendered messages/_message.html.erb (0.3ms)
+  Rendered messages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+Finished "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:20 +0530
+MessagesChannel stopped streaming from messages
+MessagesChannel unsubscribed
+
+
+Started GET "/" for 192.168.11.249 at 2016-06-16 17:48:20 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" [Websocket] for 192.168.11.249 at 2016-06-16 17:48:20 +0530
+MessagesChannel subscribing
+MessagesChannel is streaming from messages
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:48:30 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"hi"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "hi"], ["username", "Deepak"], ["created_at", 2016-06-16 12:18:30 UTC], ["updated_at", 2016-06-16 12:18:30 UTC]]
+  [1m (8.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: e1070ed1-50b5-43b4-b42f-d1c4fa27c0cb) to Inline(default) with arguments: gid://chat/Message/8
+[ActiveJob]   [1mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 8]]
+[ActiveJob] [MessageRelayJob] [e1070ed1-50b5-43b4-b42f-d1c4fa27c0cb] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/8
+[ActiveJob] [MessageRelayJob] [e1070ed1-50b5-43b4-b42f-d1c4fa27c0cb]   Rendered messages/_message.html.erb (0.1ms)
+[ActiveJob] [MessageRelayJob] [e1070ed1-50b5-43b4-b42f-d1c4fa27c0cb] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>Deepak</b>: hi</p>\n"}
+[ActiveJob] [MessageRelayJob] [e1070ed1-50b5-43b4-b42f-d1c4fa27c0cb] Performed MessageRelayJob from Inline(default) in 9.63ms
+Completed 200 OK in 30ms (ActiveRecord: 8.7ms)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: hi</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: hi</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>Deepak</b>: hi</p>\n"} (via streamed from messages)
+
+
+Started POST "/messages" for 192.168.11.249 at 2016-06-16 17:48:47 +0530
+Cannot render console from 192.168.11.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"How are you?"}}
+  [1m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "How are you?"], ["username", "test"], ["created_at", 2016-06-16 12:18:47 UTC], ["updated_at", 2016-06-16 12:18:47 UTC]]
+  [1m (6.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageRelayJob (Job ID: 3452abd1-8690-40d0-a95a-6946c942dc65) to Inline(default) with arguments: gid://chat/Message/9
+[ActiveJob]   [1mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", 9]]
+[ActiveJob] [MessageRelayJob] [3452abd1-8690-40d0-a95a-6946c942dc65] Performing MessageRelayJob from Inline(default) with arguments: gid://chat/Message/9
+[ActiveJob] [MessageRelayJob] [3452abd1-8690-40d0-a95a-6946c942dc65]   Rendered messages/_message.html.erb (0.2ms)
+[ActiveJob] [MessageRelayJob] [3452abd1-8690-40d0-a95a-6946c942dc65] [ActionCable] Broadcasting to messages: {:message=>"<p class='message'><b>test</b>: How are you?</p>\n"}
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: How are you?</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: How are you?</p>\n"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"<p class='message'><b>test</b>: How are you?</p>\n"} (via streamed from messages)
+[ActiveJob] [MessageRelayJob] [3452abd1-8690-40d0-a95a-6946c942dc65] Performed MessageRelayJob from Inline(default) in 9.61ms
+Completed 200 OK in 29ms (ActiveRecord: 7.0ms)
